@@ -73,9 +73,9 @@ public class CaixaEletronico implements ICaixaEletronico {
 
     @Override
     public String armazenaCotaMinima(Integer minimo) {
-        this.cotaMinimaPendente = minimo;
-        auditoria.registrar("Nova Cota Mínima: R$ " + minimo);
-        return "Cota mínima de R$ " + minimo;
+        this.cotaMinima = minimo;
+        auditoria.registrar("Nova Cota Mínima configurada: R$ " + minimo);
+        return "Cota mínima atualizada para R$ " + minimo;
     }
     
 }
